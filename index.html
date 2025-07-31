@@ -8,126 +8,118 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #0d0d0d, #1a1a1a);
-      color: #fff;
-      text-align: center;
+      background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+      color: white;
+      overflow-x: hidden;
     }
 
     header {
-      padding: 60px 20px 30px;
+      text-align: center;
+      padding: 2rem;
     }
 
     h1 {
-      font-size: 2.8rem;
-      color: #00ffcc;
-      margin-bottom: 20px;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
     }
 
-    p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto 30px;
-      line-height: 1.6;
-    }
-
-    .btn {
-      background: #00ffcc;
-      color: #000;
-      padding: 14px 30px;
-      font-size: 1rem;
-      border: none;
+    a.btn {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #0088cc;
+      color: white;
+      padding: 12px 24px;
       border-radius: 30px;
-      font-weight: bold;
-      cursor: pointer;
       text-decoration: none;
-      transition: all 0.3s ease;
+      font-weight: bold;
     }
 
-    .btn:hover {
-      background: #00ccaa;
+    .phone-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 3rem 0;
     }
 
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: 0 auto;
+    .phone {
+      width: 300px;
+      height: 600px;
+      background: #000;
+      border: 10px solid #444;
+      border-radius: 40px;
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+      overflow: hidden;
     }
 
-    .feature-box {
-      background: #111;
-      padding: 20px;
-      border-radius: 16px;
-      box-shadow: 0 0 15px rgba(0, 255, 204, 0.1);
+    .screen {
+      height: 100%;
+      overflow-y: auto;
+      padding: 1.5rem;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .section h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.3rem;
+      color: #00ffcc;
     }
 
     footer {
-      margin-top: 40px;
+      text-align: center;
+      padding: 1rem;
       font-size: 0.9rem;
-      color: #aaa;
-      padding-bottom: 40px;
+      color: #888;
     }
 
-    /* Mobile Icon Animation */
-    .mobile-icon {
-      margin: 30px auto;
-      animation: pulse 2s infinite;
-      filter: drop-shadow(0 0 8px #00ffcc);
+    /* Scrollbar styling */
+    .screen::-webkit-scrollbar {
+      width: 6px;
     }
-
-    @keyframes pulse {
-      0% {
-        transform: scale(1);
-        opacity: 0.9;
-      }
-      50% {
-        transform: scale(1.08);
-        opacity: 1;
-      }
-      100% {
-        transform: scale(1);
-        opacity: 0.9;
-      }
+    .screen::-webkit-scrollbar-thumb {
+      background: #00ffaa;
+      border-radius: 6px;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>🚀 Tomas Crypto Signals</h1>
-    <p>Daily updated crypto strategies, signals & VIP offers.<br>Join our growing community now!</p>
-    <a href="https://t.me/tomaswillss" target="_blank" class="btn">Join VIP Telegram</a>
-
-    <!-- Mobile Icon -->
-    <div class="mobile-icon">
-      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#00ffcc" viewBox="0 0 24 24">
-        <path d="M7 2C6.44772 2 6 2.44772 6 3V21C6 21.5523 6.44772 22 7 22H17C17.5523 22 18 21.5523 18 21V3C18 2.44772 17.5523 2 17 2H7ZM8 4H16V20H8V4Z"/>
-      </svg>
-    </div>
+    <p>Daily updated crypto strategies, VIP offers & trusted signals.</p>
+    <a class="btn" href="https://t.me/tomaswillss" target="_blank">Join VIP Telegram</a>
   </header>
 
-  <section class="features">
-    <div class="feature-box">✅ Trusted Crypto Signals</div>
-    <div class="feature-box">⚡ Fast & Accurate</div>
-    <div class="feature-box">🔐 Secure Payments</div>
-    <div class="feature-box">📞 24/7 Support</div>
-  </section>
-
-  <section>
-    <h2>📬 Contact Us</h2>
-    <p>
-      📧 <strong>Email:</strong> tradingcustomercare@gmail.com<br>
-      💬 <strong>Telegram:</strong> <a href="https://t.me/tomaswillss" target="_blank" style="color:#00ffcc;">@tomaswillss</a><br>
-      📞 <strong>WhatsApp:</strong> <a href="https://wa.me/447877470187" target="_blank" style="color:lightgreen;">+44 7877 470187</a><br>
-      💳 <strong>We accept:</strong> Binance / Skrill / Neteller
-    </p>
-  </section>
+  <div class="phone-wrapper">
+    <div class="phone">
+      <div class="screen">
+        <div class="section">
+          <h3>🔥 NFT Marketplace</h3>
+          <p>Live NFT collections</p>
+        </div>
+        <div class="section">
+          <h3>💰 Buy / Sell</h3>
+          <p>Trade BTC, ETH instantly</p>
+        </div>
+        <div class="section">
+          <h3>📈 Trading View</h3>
+          <p>Real-time charts & signals</p>
+        </div>
+        <div class="section">
+          <h3>⚡ Fast Transactions</h3>
+          <p>Low fee, instant crypto ops</p>
+        </div>
+        <div class="section">
+          <h3>👨‍💻 Admin Contact</h3>
+          <p>@tomaswillss | +44 7877 470187</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer>
-    © 2025 Tomas Crypto. All rights reserved.
+    © 2025 Tomas Crypto Signals. All rights reserved.
   </footer>
-
 </body>
 </html>
